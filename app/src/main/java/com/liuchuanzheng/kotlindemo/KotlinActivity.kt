@@ -16,7 +16,10 @@ class KotlinActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        tv.text = "我来自kotlin"
+        tv.text = getText()
 
+    }
+    fun getText():String{
+        return "我来自kotlin"
     }
 }
